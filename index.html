@@ -23,9 +23,13 @@
 		var y=parseFloat(prompt("introduce un valor Y para el ejercicio 8: "))
 
 		t=Math.log10(Math.abs(Math.pow(t,2)-Math.pow(t,3)))
+		t=t.toFixed(3)
 		a=(75/(2*a))*Math.cos(0.8*a-3)
+		a=a.toFixed(3)
 		c=Math.pow(x,2)+Math.pow(y,2)-(Math.pow(x,2)/Math.pow(y,2))
+		c=c.toFixed(3)
 		d=Math.sqrt(x*y)-Math.sqrt(x+y)+Math.pow(((x-y)/(x-2*y)),2)-Math.sqrt(x/y)
+		d=d.toFixed(3)
 		document.getElementById("7a").innerHTML="El resultado de 7.a es= "+t;
 		document.getElementById("7b").innerHTML="El resultado de 7.b es= "+a;
 		document.getElementById("8a").innerHTML="El resultado de 8.a es= "+c;
