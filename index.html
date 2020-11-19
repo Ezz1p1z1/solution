@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript</title>
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<link rel="icon" href="java.png">
+</head>
+<body>
+	<nav class="menu">
+			<ul>
+				<li><a href="index.html">Ejercicio 1</a></li>
+				<li><a href="">Ejercicio 2</a></li>
+				<li><a href="juego.html">Juego con N. randoms</a></li>
+			</ul>
+	</nav>
+	<div class="container">
+		<header>
+			<h1>Ejercicios</h1>
+		</header>
+		<img src="tarea1.png" alt="ejercicios">
+		<div class="result">
+			<input type="number" placeholder="Ejer. 7" id="numeroA">
+			<input type="number" placeholder="Ejer. 8 var: X" id="numeroB">
+			<input type="number" placeholder="Ejer. 8 var: Y" id="numeroC">
+			<input type="text" placeholder="Genero de Mascota (perro o gato):" id="numeroD">
+			<input type="number" placeholder="Edad de la Mascota" id="numeroE">
+			<button id="btn">Calcular</button>
+			<p id="7a"></p>
+			<p id="7b"></p>
+			<p id="8a"></p>
+			<p></p>
+			<p id="8b"></p>
+		</div>
+		<script type="text/javascript">
+			function operacion(){
+				var t=parseFloat(document.getElementById('numeroA').value);
+				var a=t
+				var x=parseFloat(document.getElementById('numeroB').value);
+				var y=parseFloat(document.getElementById('numeroC').value);
+
+				t=Math.log10(Math.abs(Math.pow(t,2)-Math.pow(t,3)))
+				t=t.toFixed(3)
+				a=(75/(2*a))*Math.cos(0.8*a-3)
+				a=a.toFixed(3)
+				c=Math.pow(x,2)+Math.pow(y,2)-(Math.pow(x,2)/Math.pow(y,2))
+				c=c.toFixed(3)
+				d=Math.sqrt(x*y)-Math.sqrt(x+y)+Math.pow(((x-y)/(x-2*y)),2)-Math.sqrt(x/y)
+				d=d.toFixed(3)
+				document.getElementById("7a").innerHTML="El resultado de 7.a = "+t;
+				document.getElementById("7b").innerHTML="El resultado de 7.b = "+a;
+				document.getElementById("8a").innerHTML="El resultado de 8.a = "+c;
+				document.getElementById("8b").innerHTML="El resultado de 8.b = "+d;
+			}
+			var ope=document.getElementById('btn');
+			ope.addEventListener('click',operacion);
+		</script>
+
+		<h1>Edad de tu mascota</h1>
+		<script type="text/javascript">
+			function edades(){
+				var p=document.getElementById('numeroD').value;
+				if (p=="perro"){
+					var m=parseInt(document.getElementById('numeroE').value);
+					if (m==0){
+						document.getElementById("años").innerHTML="La edad de su perro es: 0 años";
+					}
+					else{
+						edad=16*Math.log(m)+31
+						edad=edad.toFixed()
+					document.getElementById("años").innerHTML="La edad de su perro es: "+edad+" años";
+					}
+				}
+				else{
+					var m=parseInt(document.getElementById('numeroE').value);
+					if (m==0){
+						document.getElementById("años").innerHTML="La edad de su gato es: 0 años"
+					}
+					else{
+						if (m==1){
+						document.getElementById("años").innerHTML="La edad de su gato es: 12 años"
+						}
+						else{
+						edad=24+4*(m-2)
+						document.getElementById("años").innerHTML="La edad de su gato es: "+edad+" años";
+						}
+					}
+				}
+			}
+			var ope=document.getElementById('btn');
+			ope.addEventListener('click',edades);
+		</script>
+		<div class="container12">
+			<img  class="imagen" src="perro.jpg">
+			<p id="años"></p>
+			<img class="imagen1" src="gato.jpg">
+		</div>
+	</div>
+</body>
+</html>
