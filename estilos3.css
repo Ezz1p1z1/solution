@@ -1,0 +1,158 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	
+	box-sizing: border-box;
+	line-height: 40px;
+	background: #0f2027; /* fallback for old browsers */
+  	background: -webkit-linear-gradient(to right, #0f2027, #203a43, #2c5364); /* Chrome 10-25, Safari 5.1-6 */
+  	background: linear-gradient(to right, #0f2027, #203a43, #2c5364); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.menu ul{
+	font-size: 25px;
+	margin: 0;
+	list-style: none;
+	padding: 0;
+	display: flex;
+}
+.menu li:hover{
+	background: rgba(0,0,0,0.3);
+}
+.menu li a{
+	display: block;
+	padding: 15px 20px;
+	color: #33F6FF;
+	text-decoration: none;
+}
+
+.result{
+	color: #33F6FF;
+	font-size: 25px;
+	margin: auto;
+	width: 70%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 50px 50px;
+	gap:2em;
+	padding:20px;
+}
+.result input{
+	border: 5px solid green;
+}
+.result button{
+	padding: 15px;
+}
+h1{
+	color: #33F6FF;
+	text-align: center;
+}
+img{
+	width: 50%;
+	height: 50%;
+	display: block;
+	margin:auto;
+	padding: 15px 15px;
+}
+
+.ejera{
+	display: grid;
+	grid-template-columns:1fr 1fr;
+	gap:0.5em;
+}
+form{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	color: #33F6FF;
+	background-color: rgba(255,255,255,0.1);
+	padding: 20px 20px;
+	gap:1em;
+	margin-bottom: 50px;
+}
+
+form button{
+	padding:10px;
+}
+
+
+
+
+
+@media screen and (max-width: 1020px) {
+	.result{
+		color: #33F6FF;
+		font-size: 25px;
+		margin: 10px auto;
+		width: 70%;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 50px 50px;
+		gap:2em;
+		padding:10px;
+	}
+	form{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		color: #33F6FF;
+		background-color: rgba(255,255,255,0.1);
+		padding: 20px 20px;
+		gap:1em;
+		margin-bottom: 50px;
+	}
+	form button{
+		height: 50%;
+	}
+	
+}
+
+
+@media screen and (max-width:970px ) {
+	.result{
+		color: #33F6FF;
+		font-size: 25px;
+		justify-content: center;
+		width: 70%;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 50px 50px;
+		gap:2em;
+		padding:10px;
+	}
+	.ejera{
+		display: grid;
+		grid-template-rows: 40px 40px;
+		grid-template-columns:1fr;
+		gap:0.5em;
+	}
+	.result input{
+		justify-content: center;
+		padding:10px;
+		grid-template-rows: 50px 50px;
+	}
+	img{
+		width: 80%;
+		height: 80%;
+		display: block;
+		margin:auto;
+		padding: 15px 15px;
+	}
+}
+
+
+@media screen and (max-width: 700px) {
+	form{
+		grid-template-columns: 1fr;
+	}
+	form button{
+		padding: 30px;
+	}
+	img{
+		width: 80%;
+		height: 80%;
+		display: block;
+		margin:auto;
+		padding: 15px 15px;
+	}
+	
+}
