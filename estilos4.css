@@ -1,0 +1,32 @@
+body{
+	
+	box-sizing: border-box;
+	line-height: 40px;
+	background: #0f2027; /* fallback for old browsers */
+  	background: -webkit-linear-gradient(to right, #0f2027, #203a43, #2c5364); /* Chrome 10-25, Safari 5.1-6 */
+  	background: linear-gradient(to right, #0f2027, #203a43, #2c5364); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.menu ul{
+	font-size: 25px;
+	margin: 0;
+	list-style: none;
+	padding: 0;
+	display: flex;
+}
+.menu li:hover{
+	background: rgba(0,0,0,0.3);
+}
+.menu li a{
+	display: block;
+	padding: 15px 20px;
+	color: #33F6FF;
+	text-decoration: none;
+}
+
+#b1{
+	margin: 10px auto;
+	padding: 10px auto;
+	width: 80%;
+	height: 80%;
+}
